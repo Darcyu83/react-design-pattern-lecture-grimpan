@@ -4,7 +4,7 @@ import AbstractGrimpan, {
 
 // singleton 패턴
 class IEGrimpan extends AbstractGrimpan {
-  protected static override instance: IEGrimpan;
+  // protected static override instance: IEGrimpan;
 
   static override getInstance() {
     if (!this.instance) {

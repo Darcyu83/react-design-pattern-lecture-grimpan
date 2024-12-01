@@ -23,6 +23,7 @@ class Grimpan {
     }
     return this.instance;
   }
+
   initialize() {}
 
   initializeMenu() {}

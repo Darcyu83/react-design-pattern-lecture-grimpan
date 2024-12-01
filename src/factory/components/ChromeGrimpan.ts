@@ -4,7 +4,11 @@ import AbstractGrimpan, {
 
 // singleton 패턴
 class ChromeGrimpan extends AbstractGrimpan {
-  protected static override instance: ChromeGrimpan;
+  protected static override instance: ChromeGrimpan | null = null;
+
+  initialize() {}
+
+  initializeMenu() {}
 
   static override getInstance() {
     if (!this.instance) {
@@ -13,11 +17,9 @@ class ChromeGrimpan extends AbstractGrimpan {
         GRIMPAN_PRIVATE_PROTECTED_CONSTRUCTOR_SYMBOL // private constructor
       );
     }
+
     return this.instance;
   }
-  initialize() {}
-
-  initializeMenu() {}
 }
 
 export default ChromeGrimpan;
