@@ -3,22 +3,23 @@ import AbstractGrimpan, {
 } from "./AbstractGrimpan";
 
 // singleton 패턴
-class IEGrimpan extends AbstractGrimpan {
-  // protected static override instance: IEGrimpan;
+class ChromeGrimpan extends AbstractGrimpan {
+  protected static override instance: ChromeGrimpan | null = null;
+
+  initialize() {}
+
+  // initializeMenu() {}
 
   static override getInstance() {
     if (!this.instance) {
-      this.instance = new IEGrimpan(
+      this.instance = new ChromeGrimpan(
         document.querySelector("#canvas"),
         GRIMPAN_PRIVATE_PROTECTED_CONSTRUCTOR_SYMBOL // private constructor
       );
     }
+
     return this.instance;
   }
-
-  initialize() {}
-
-  initializeMenu() {}
 }
 
-export default IEGrimpan;
+export default ChromeGrimpan;

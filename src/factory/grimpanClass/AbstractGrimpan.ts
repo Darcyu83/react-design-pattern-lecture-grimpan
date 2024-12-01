@@ -21,7 +21,9 @@ export default abstract class AbstractGrimpan {
   }
 
   abstract initialize(): void;
-  abstract initializeMenu(): void;
+
+  // abstract initializeMenu(): void;
+
   static getInstance(): AbstractGrimpan {
     throw new Error("getInstance must be implemented in subclasses.");
   }

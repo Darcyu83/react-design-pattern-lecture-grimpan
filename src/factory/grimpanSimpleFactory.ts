@@ -1,5 +1,5 @@
-import ChromeGrimpan from "./components/ChromeGrimpan";
-import IEGrimpan from "./components/IEGrampan";
+import ChromeGrimpan from "./grimpanClass/ChromeGrimpan";
+import IEGrimpan from "./grimpanClass/IEGrampan";
 
 // 심플 팩토리 === 예제 - 잘안쓰임 너무 단순
 class GrimpanSimpleIFFactory {
